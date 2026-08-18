@@ -1,3 +1,9 @@
+---
+title: プライバシーポリシー
+permalink: /privacy/ja/
+lang: ja
+---
+
 # Veiler プライバシーポリシー
 
 **制定日: 2026年7月15日**

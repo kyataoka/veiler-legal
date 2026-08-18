@@ -1,3 +1,9 @@
+---
+title: 利用規約
+permalink: /terms/ja/
+lang: ja
+---
+
 # Veiler 利用規約
 
 **制定日: 2026年8月16日**

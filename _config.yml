@@ -1,0 +1,14 @@
+title: Veiler
+description: Veiler のプライバシーポリシーと利用規約
+# The URLs the app and App Store Connect point at. Changing either of these
+# breaks a link that ships inside a released binary, so they are pinned by the
+# permalinks in each document rather than derived from file paths.
+baseurl: /veiler-legal
+url: https://kyataoka.github.io
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: document
+exclude:
+  - README.md

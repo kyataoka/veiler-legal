@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'ja' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Veiler</title>
+<meta name="description" content="{{ page.title }}（Veiler）">
+<style>
+  /* No external resources: these pages are read by App Review and by people
+     on a phone, and both should get the whole document from one request. */
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e3e3e6;
+    --link: #3f4ec4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101013;
+      --fg: #e9e9ec;
+      --muted: #9a9aa1;
+      --rule: #2a2a30;
+      --link: #9aa5f2;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+      "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo,
+      system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.9;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; line-height: 1.5; margin: 0 0 1.5rem; }
+  h2 {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin: 3rem 0 0.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 { font-size: 1rem; margin: 2rem 0 0.5rem; }
+  p, li { overflow-wrap: anywhere; }
+  ol, ul { padding-left: 1.4em; }
+  li { margin: 0.4em 0; }
+  li > ul, li > ol { margin: 0.4em 0; }
+  a { color: var(--link); }
+  strong { font-weight: 700; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+  table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; }
+  th, td { border: 1px solid var(--rule); padding: 0.5em 0.7em; text-align: left; }
+  .home { display: block; margin-bottom: 2rem; font-size: 0.9rem; color: var(--muted); }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <a class="home" href="{{ '/' | relative_url }}">← Veiler</a>
+  {{ content }}
+  <footer>
+    <p>Veiler — Hiroki Kataoka<br>
+    お問い合わせ: <a href="mailto:kyataoka.deve@gmail.com">kyataoka.deve@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
